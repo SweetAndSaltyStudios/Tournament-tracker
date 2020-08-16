@@ -42,6 +42,7 @@
             this.TeamTwoScoreLabel = new System.Windows.Forms.Label();
             this.TeamTwoNameLabel = new System.Windows.Forms.Label();
             this.VersusLabel = new System.Windows.Forms.Label();
+            this.ScoreButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // HeaderLabel
@@ -152,11 +153,20 @@
             // VersusLabel
             // 
             this.VersusLabel.AutoSize = true;
-            this.VersusLabel.Location = new System.Drawing.Point(326, 252);
+            this.VersusLabel.Location = new System.Drawing.Point(386, 257);
             this.VersusLabel.Name = "VersusLabel";
-            this.VersusLabel.Size = new System.Drawing.Size(37, 30);
+            this.VersusLabel.Size = new System.Drawing.Size(53, 30);
             this.VersusLabel.TabIndex = 12;
-            this.VersusLabel.Text = "VS";
+            this.VersusLabel.Text = "-VS-";
+            // 
+            // ScoreButton
+            // 
+            this.ScoreButton.Location = new System.Drawing.Point(445, 248);
+            this.ScoreButton.Name = "ScoreButton";
+            this.ScoreButton.Size = new System.Drawing.Size(111, 48);
+            this.ScoreButton.TabIndex = 13;
+            this.ScoreButton.Text = "SCORE";
+            this.ScoreButton.UseVisualStyleBackColor = true;
             // 
             // TournamentViewer
             // 
@@ -164,6 +174,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(568, 602);
+            this.Controls.Add(this.ScoreButton);
             this.Controls.Add(this.VersusLabel);
             this.Controls.Add(this.TeamTwoScoreValueTextBox);
             this.Controls.Add(this.TeamTwoScoreLabel);
@@ -203,6 +214,7 @@
         private System.Windows.Forms.Label TeamTwoScoreLabel;
         private System.Windows.Forms.Label TeamTwoNameLabel;
         private System.Windows.Forms.Label VersusLabel;
+        private System.Windows.Forms.Button ScoreButton;
     }
 }
 
